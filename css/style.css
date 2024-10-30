@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #1E1D2B;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+/* responsive */
+nav.active {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav h2.logo {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #F25F29;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .bars {
+    position: absolute;
+    right: 1rem;
+    font-size: xx-large;
+    display: none;
+}
+
+ul.nav-links {
+    display: flex;
+}
+
+/* responsive */
+nav.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+li.nav-link {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+li.nav-link:hover {
+    border: 1px solid #12B886;
+}
+
+li.nav-link.auth {
+
+}
+
+li.nav-link a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    nav .bars {
+    display: block;
+}
+
+    nav .nav-links {
+        display: none;
+    }
+}
+
+/* It is ready */
+/* Have a good time */
+
+.titulo{
+    font-size: 100px;
+}
+
+.inicio{
+    color: white;
+    font-size: 30px;
+
+}
+
+.imagenIni{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    right: 300px;
+    top: 0px;
+}
+
+.container{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    padding-top: 150px;
+}
+
+.botonMenu{
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+li.botonMenu:hover {
+    border: 1px solid #12B886;
+}
